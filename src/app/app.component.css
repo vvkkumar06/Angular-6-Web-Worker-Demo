@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+}
+.w3-card-4 {
+    float: left;
+    padding: 20px;
+    width:100px;
+    height: 150px;
+    margin:5px;
+}

@@ -1,0 +1,25 @@
+<header class="w3-container w3-panel w3-blue">
+    <h1>Web Worker</h1>
+</header>
+
+<section class="w3-container">
+       
+        <button (click) = "startWork()" class="w3-button w3-teal" >
+            Load Users
+        </button>
+        <button (click) = "startWithWorker()" class="w3-button w3-green" >
+            Heavy Task(with worker)
+        </button>
+        <button (click) = "startWithoutWorker()" class="w3-button w3-orange">
+            Heavy Task(without worker)
+        </button>
+        <span style="margin-left: 50px"> <label for="">Users: </label>  {{count}}</span>
+        <label for="" style="float:right">Loaded in {{loadingText}} Sec </label>
+        <hr>
+        <label for="">Heavy task has taken </label>{{num}} Seconds
+        <span style='float:right'><label for="" >Time Taken To Load Users </label>{{usersTime.toFixed(2)}} Seconds </span>
+    <section #user class='w3-center'></section>
+</section>
+<footer class="w3-panel w3-grey w3-center" style='position:absolute;bottom:0;width: 100%;margin-bottom:0px'>
+    <h4>Web Worker Demo By Vivek Kumar @Optimus Information Inc</h4>
+</footer>
